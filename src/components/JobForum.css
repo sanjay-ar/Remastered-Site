@@ -1,0 +1,46 @@
+.careers-section {
+    position: relative;
+    padding: 4rem 0;
+    background: linear-gradient(180deg, rgba(29,72,154,0.05) 0%, rgba(29,72,154,0) 100%);
+}
+
+.content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* Remove the floating animation */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Remove the animation from the heading */
+.careers-section h2 {
+    /* animation: float 3s ease-in-out infinite; */ /* Removing this line */
+}
+
+/* Enhance button hover effect */
+.careers-section button:hover {
+    box-shadow: 0 10px 20px rgba(29,72,154,0.2);
+}
+
+/* Add smooth transition for content */
+.careers-section .grid {
+    transition: all 0.5s ease-in-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .careers-section {
+        padding: 3rem 0;
+    }
+    
+    .careers-section h2 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Rest of your CSS styles */ 

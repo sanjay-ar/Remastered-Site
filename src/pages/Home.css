@@ -1,0 +1,204 @@
+/* Reset default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full-height video header */
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+/* Gallery overlay */
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Section spacing and backgrounds */
+section {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    section {
+        padding: 3rem 1rem;
+    }
+}
+
+/* Content wrapper for consistent width */
+.content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Section transitions */
+section {
+    transition: background-color 0.3s ease;
+}
+
+/* Ensure proper spacing after navbar */
+main {
+    padding-top: 80px; /* Adjust based on navbar height */
+}
+
+/* Add subtle shadows to create depth */
+section {
+    position: relative;
+}
+
+section::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        rgba(0, 0, 0, 0.05),
+        transparent
+    );
+}
+
+:root {
+    /* Base font size */
+    font-size: 10px;
+    /* Full grid area variable */
+    --fullGrid: 1 / 1 / -1 / -1;
+}
+
+.home-header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.video-bg::-webkit-media-controls {
+    display: none !important;
+}
+
+.gallery-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Changed to cover for full fitting */
+    opacity: 0.3; /* Make the images more transparent */
+    transition: opacity 0.5s ease;
+}
+
+.image-info {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.5); /* Slightly more transparent */
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    width: 90%;
+    text-align: center;
+    backdrop-filter: blur(5px); /* Adds a slight blur effect */
+}
+
+.image-info h3 {
+    font-size: 24px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.image-info .date {
+    display: block;
+    font-size: 14px;
+    color: #eee;
+    margin-bottom: 8px;
+}
+
+.image-info p {
+    font-size: 16px;
+    line-height: 1.5;
+    opacity: 0.9;
+}
+
+.title-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-title {
+    font-size: calc(1.8em + 2.5vw);
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    text-shadow: 0.05em 0.05em 0.05em rgba(0, 0, 0, 0.4);
+}
+
+.main-content {
+    position: relative;
+    z-index: 3;
+    padding: 5em 2em;
+    max-width: 94em;
+    margin: 0 auto;
+}
+
+.gallery-section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.full-screen-image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.full-screen-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease-in-out;
+} 
