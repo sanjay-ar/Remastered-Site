@@ -20,6 +20,7 @@ import Gallery from './components/Gallery/Gallery';
 import {useDocTitle} from './components/CustomHook';
 import ScrollToTop from './components/ScrollToTop';
 import ChatBot from './components/ChatBot';
+import MetaTags from './components/SEO/MetaTags';
 
 function App() {
   useEffect(() => {
@@ -39,22 +40,25 @@ function App() {
   useDocTitle("Naatscorp Pvt Ltd");
 
   return (
-    <ThemeProvider>
-      <BrowserRouter>
-        <ScrollToTop>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/gallery" element={<Gallery />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/get-demo" element={<DemoProduct />} />
-            <Route path="/careers" element={<JobForum />} />
-            <Route path="/apply/:jobId" element={<JobApplication />} />
-          </Routes>
-        </ScrollToTop>
-        <ChatBot />
-        <Analytics />
-      </BrowserRouter>
-    </ThemeProvider>
+    <>
+      <MetaTags />
+      <ThemeProvider>
+        <BrowserRouter>
+          <ScrollToTop>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/gallery" element={<Gallery />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/get-demo" element={<DemoProduct />} />
+              <Route path="/careers" element={<JobForum />} />
+              <Route path="/apply/:jobId" element={<JobApplication />} />
+            </Routes>
+          </ScrollToTop>
+          <ChatBot />
+          <Analytics />
+        </BrowserRouter>
+      </ThemeProvider>
+    </>
   );
 }
 
