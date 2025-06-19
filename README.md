@@ -45,7 +45,3 @@ The previous version of the website was built with basic HTML and CSS, which led
 ## 🚀 Deployment
 
 Deployed via [Vercel](https://vercel.com) with continuous integration using GitHub.
-
-To deploy locally:
-
-
