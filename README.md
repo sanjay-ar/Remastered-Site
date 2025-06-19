@@ -5,7 +5,7 @@ Welcome to the official repository for the redesigned website of **Naatscorp Pri
 ## 🔗 Live Links
 
 - 🌐 **Current Live Site:** [https://naatscorp-cmp.vercel.app](https://naatscorp-cmp.vercel.app)
-- 🕸️ **Legacy Site:** [https://naatscorp.github.io](https://naatscorp.github.io)
+- 🕸️ **Legacy Site:** [https://naatscorp.github.io](https://naatscorp.com/)
 
 ---
 
