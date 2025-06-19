@@ -42,6 +42,11 @@ The previous version of the website was built with basic HTML and CSS, which led
 
 ---
 
-## 🚀 Deployment
+### 🚀 Maintained by [Sanjay A R](https://github.com/sanjay-ar)
 
-Deployed via [Vercel](https://vercel.com) with continuous integration using GitHub.
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-blue?style=flat-square&logo=vercel)](https://portfolio-ar.vercel.app/)  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Sanjay%20A%20R-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/sanjay-ar/)  
+[![GitHub](https://img.shields.io/badge/GitHub-sanjay--ar-black?style=flat-square&logo=github)](https://github.com/sanjay-ar)
+
+> 💡 *Like this project? Leave a ⭐ and connect with me!*
+
