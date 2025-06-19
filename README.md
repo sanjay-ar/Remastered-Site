@@ -48,8 +48,4 @@ Deployed via [Vercel](https://vercel.com) with continuous integration using GitH
 
 To deploy locally:
 
-```bash
-git clone https://github.com/your-username/naatscorp-cmp.git
-cd naatscorp-cmp
-npm install
-npm start
+
